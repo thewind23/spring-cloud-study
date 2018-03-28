@@ -10,4 +10,4 @@ spring:
     config:
       server:
         native:
-          search-locations: /Users/qixuebin/trunk/hidex
+          search-locations: /Users/qixuebin/trunk/spring-cloud-study/hidex

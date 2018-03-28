@@ -32,14 +32,20 @@ zuul:
     user:
       path: /user-path/**
       serviceId: microservice-provider-user
+    admin:
+      path: /admin/**
+      serviceId: microservice-admin
+    consumer:
+      paht: /movie/**
+      serviceId: microservice-consumer-movie
+  ignored-services: env,metrics,trace,dump,jolokia,info,configprops,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,turbine.stream
+  ignored-patterns: /**/js/**,/**/css/**
 
-    ignored-services: env,metrics,trace,dump,jolokia,info,configprops,logfile,refresh,flyway,liquibase,heapdump,loggers,auditevents,hystrix.stream,turbine.stream
-    ignored-patterns: /**/js/**,/**/css/**
 security:
   name: admin
   password: password
   role: ADMIN.USER
-  url: /user-path/simple/**./user-path/test/get/**./eureka/**
+  url: /user-path/simple/**./admin/**./eureka/**
 
 
 

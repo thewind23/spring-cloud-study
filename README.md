@@ -1,9 +1,9 @@
 # spring-cloud-study
 spring cloud 学习
-hidex:配置中心文件
-microservice-admin：Spring boot 服务监控
-microservice-config：配置中心
-microservice-consumer-movie：服务消费者
+hidex:配置中心文件  
+microservice-admin：Spring boot 服务监控  
+microservice-config：配置中心  
+microservice-consumer-movie：服务消费者  
 microservice-consumer-movie-feign：服务消费者通过feign调用
 microservice-consumer-movie-ribbon：服务消费者负载均衡调用
 microservice-consumer-movie-ribbon-properties-customizing

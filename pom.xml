@@ -11,10 +11,10 @@
 
 	<modules>
 		<module>microservice-provider-user</module>
-		<module>microservice-provider-user2</module>
+		<module>microservice-provider-user-oauth2</module>
 		<module>microservice-consumer-movie</module>
 		<module>microservice-discovery-eureka</module>
-		<module>microservice-discovery-eureka2</module>
+		<module>microservice-discovery-eureka-oauth2</module>
 		<module>microservice-consumer-movie-ribbon</module>
 		<module>microservice-consumer-movie-ribbon-properties-customizing</module>
 		<module>microservice-consumer-movie-feign</module>

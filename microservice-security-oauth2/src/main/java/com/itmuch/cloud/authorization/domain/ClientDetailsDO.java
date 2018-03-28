@@ -1,32 +1,37 @@
 package com.itmuch.cloud.authorization.domain;
 
 
+import javax.persistence.*;
+
 /**
  * Created by zhuwj on 2018/1/12.
  *  客户端
  */
+@Entity
 public class ClientDetailsDO{
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String clientId;
-
+    @Column
     private String clientSecret;
-
+    @Column
     private String resourceIds;
-
+    @Column
     private String scope;
-
+    @Column
     private String authorities;
-
+    @Column
     private String authorizedGrantTypes;
-
+    @Column
     private String webServerRedirectUri;
-
+    @Column
     private String  autoApproveScopes;
-
+    @Column
     private Integer accessTokenValiditySeconds;
-
+    @Column
     private Integer refreshTokenValiditySeconds;
-
+    @Column
     private String additionalInformation;
 
     public String getClientId() {

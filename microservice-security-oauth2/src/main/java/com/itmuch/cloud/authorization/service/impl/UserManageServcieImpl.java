@@ -1,7 +1,7 @@
 package com.itmuch.cloud.authorization.service.impl;
 
-import com.itmuch.cloud.authorization.dao.UserDao;
 import com.itmuch.cloud.authorization.domain.ClientDetailsDO;
+import com.itmuch.cloud.authorization.repository.UserRepository;
 import com.itmuch.cloud.authorization.service.UserManageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -17,9 +17,11 @@ import org.springframework.stereotype.Service;
 public class UserManageServcieImpl implements UserManageService{
 
     @Autowired
-    private UserDao userDao;
+    private UserRepository userRepository;
+
     @Override
     public ClientDetailsDO findByClientId(String clientId) {
-        return userDao.findByClientId(clientId);
+
+        return userRepository.findOne(clientId);
     }
 }

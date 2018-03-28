@@ -13,11 +13,13 @@
         <module name="microservice-consumer-movie-ribbon" />
         <module name="microservice-consumer-movie-ribbon-properties-customizing" />
         <module name="microservice-discovery-eureka" />
+        <module name="microservice-discovery-eureka-oauth2" />
         <module name="microservice-discovery-eureka2" />
         <module name="microservice-gateway-zuul" />
         <module name="microservice-gateway-zuul-oauth2" />
         <module name="microservice-monitor" />
         <module name="microservice-provider-user" />
+        <module name="microservice-provider-user-oauth2" />
         <module name="microservice-provider-user2" />
         <module name="microservice-security-oauth2" />
       </profile>
@@ -30,11 +32,13 @@
       <module name="microservice-consumer-movie-ribbon" target="1.8" />
       <module name="microservice-consumer-movie-ribbon-properties-customizing" target="1.8" />
       <module name="microservice-discovery-eureka" target="1.8" />
+      <module name="microservice-discovery-eureka-oauth2" target="1.8" />
       <module name="microservice-discovery-eureka2" target="1.8" />
       <module name="microservice-gateway-zuul" target="1.8" />
       <module name="microservice-gateway-zuul-oauth2" target="1.8" />
       <module name="microservice-monitor" target="1.8" />
       <module name="microservice-provider-user" target="1.8" />
+      <module name="microservice-provider-user-oauth2" target="1.8" />
       <module name="microservice-provider-user2" target="1.8" />
       <module name="microservice-security-oauth2" target="1.8" />
       <module name="microservice-spring-cloud" target="1.8" />

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="E:/trunk/class-record/class-record-server/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/trunk/hidex/rti-aliyunmq.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/trunk/hidex/rti-redis.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/trunk/hidex/rti-serverpath.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/trunk/hidex/web-path.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/trunk/hidex/weixin-redis.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/itmuch/cloud/SpringBootApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="F:/trunk/service-movie/src/main/java/com/itmuch/cloud/servicemovie/ServiceMovieApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

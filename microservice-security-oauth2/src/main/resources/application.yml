@@ -1,0 +1,30 @@
+server:
+  port: 9500
+spring:
+  application:
+    name: microservice-security-oauth2    # 服务名称
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/spring_cloud?autoReconnect=true&autoReconnectForPools=true&useUnicode=true&characterEncoding=UTF-8&useSSL=true
+    username: root
+    password: 123456
+    driver-class: com.mysql.jdbc.Driver
+
+#eureka:
+#  client:
+#    serviceUrl:
+#      defaultZone: http://user:password123@localhost:8761/eureka
+#  instance:
+#    prefer-ip-address: true
+#    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+
+
+#  redis:
+#    host: 127.0.0.1
+#    port: root
+#    password: root
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+security:
+    oauth2:
+      resource:
+        filter-order: 3

@@ -1,0 +1,73 @@
+spring:
+  application:
+    name: microservice-gateway-zuul-oauth2
+server:
+  port: 8040
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password123@localhost:8761/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${server.port}}
+
+zuul:
+  routes:
+    user:
+      path: /user-path/**
+      serviceId: microservice-provider-user2
+    security:
+       path: /**
+       sensitiveHeaders:
+       serviceId: microservice-security-oauth2
+
+
+security:
+  oauth2:
+    client:
+      access-token-uri: http://localhost:8040/oauth/token
+      user-authorization-uri: http://localhost:8040/oauth/authorize
+      client-id: microservice-gateway-zuul
+    resource:
+      user-info-uri: http://localhost:8040/user/userinfo
+      prefer-token-info: false
+
+#zuul:
+#  routes:
+#    microservice-provider-user2: /user/**
+
+
+#zuul:
+#  routes:
+#    users:
+#      path: /user-path/**
+#      serviceId: microservice-provider-user2
+#
+#ribbon:
+#  eureka:
+#    enabled: false
+#
+#microservice-provider-user2:  #serviceId
+#  ribbon:
+#    listOfServers: http://192.168.60.166:7901,http://192.168.60.166:7900
+
+#zuul:
+#  routes:
+#    user:
+#      path: /user-path/**
+#      url: http://192.168.60.166:7901
+
+
+
+
+
+
+
+#      defaultZone: http://user:password123@localhost:8761/eureka
+#security:
+#  basic:
+#    enabled: true    #启用SpringSecurity的安全配置项
+#  user:
+#    name: jmxjava    #认证用户名
+#    password: jmxhello #认证密码
+#    role: user

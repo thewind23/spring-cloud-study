@@ -9,8 +9,10 @@ eureka:
     hostname: eureka1
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+#    register-with-eureka: true #是否将eureka自身作为应用注册到eureka注册中心
+#    fetch-registry: false #为true时，可以启动，但报异常：Cannot execute request on any known server
+    healthcheck:
+      enabled: true
     serviceUrl:
       defaultZone: http://eureka2:8762/eureka/
 ---
@@ -23,8 +25,10 @@ eureka:
     hostname: eureka2
     instance-id: ${spring.cloud.client.ipAddress}:${server.port}
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+#    register-with-eureka: true #是否将eureka自身作为应用注册到eureka注册中心
+#    fetch-registry: false #为true时，可以启动，但报异常：Cannot execute request on any known server
+    healthcheck:
+      enabled: true
     serviceUrl:
       defaultZone: http://eureka1:8761/eureka/
 
